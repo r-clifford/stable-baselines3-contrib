@@ -108,6 +108,9 @@ class TQC(OffPolicyAlgorithm):
         seed: Optional[int] = None,
         device: Union[th.device, str] = "auto",
         _init_setup_model: bool = True,
+        env_kwargs=None,
+        eval_env_kwargs=None,
+
     ):
         super().__init__(
             policy,
